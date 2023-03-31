@@ -109,7 +109,7 @@ app.post('/login',(req,res)=>{
 const axios = require('axios');
 
 app.get('/weather/:city', async (req, res) => {
-  const apiKey = 'e07d16d4e233e9ac8fc269cf1b56ccf3';
+  const apiKey = '';
   const city = req.params.city;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
   try {
